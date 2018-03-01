@@ -23,9 +23,77 @@ export interface Menu {
 const MENUITEMS = [
   {
     state: '/',
-    name: 'HOME',
+    name: 'Dashboard',
     type: 'link',
     icon: 'basic-accelerator'
+  },
+  {
+    state: 'usuario',
+    name: 'Usuarios',
+    type: 'sub',
+    icon: 'basic-spread-text-bookmark',
+    children: [
+      {
+        state: 'crear-usuario',
+        name: 'Crear Usuarios'
+      },
+      {
+        state: 'listar-usuario',
+        name: 'Listar Usuario'
+      }
+    ]
+  },
+  {
+    state: 'tiempo-consulta',
+    name: 'Tiempos de Consulta',
+    type: 'sub',
+    icon: 'basic-clock',
+    children: [
+      {
+        state: 'crear-rango',
+        name: 'Crear Rangos'
+      },
+      {
+        state: 'listar-rango',
+        name: 'Listar Rango'
+      }
+    ]
+  },
+  {
+    state: 'paciente',
+    name: 'Paciente',
+    type: 'sub',
+    icon: 'basic-archive-full',
+    children:[
+      {
+        state: 'crear-paciente',
+        name: 'Crear Paciente'
+      },
+      {
+        state: 'listar-paciente',
+        name: 'Listar Paciente'
+      }
+    ]
+  },
+  {
+    state: 'consulta',
+    name: 'Consultas',
+    type: 'sub',
+    icon: 'basic-anticlockwise',
+    children: [
+      {
+        state: 'horario-doctor',
+        name: 'Horario Doctor'
+      },
+      {
+        state: 'crear-cita',
+        name: 'Crear Cita'
+      },
+      {
+        state: 'listar-cita',
+        name: 'Listar Citas'
+      }
+    ]
   },
   {
     state: 'pages',
@@ -58,7 +126,7 @@ const MENUITEMS = [
         name: 'BLANK'
       }
     ]
-  },
+  }/* ,
   {
     state: 'punto-venta',
     name: 'Puntos de Venta',
@@ -144,7 +212,7 @@ const MENUITEMS = [
     name: 'Entrega en PV',
     type: 'link',
     icon: 'ecommerce-basket-check'
-  },
+  } */,
   {
     state: 'pendiente',
     name: 'Pendiente de Pago',

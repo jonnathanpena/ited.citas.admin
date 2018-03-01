@@ -1,13 +1,13 @@
 //Light theme
 $light-theme-background: (
   background:       $body-bg,
-  header:            rgb(227,97,31), //white,
-  sidebar:          rgb(34,89,159), //rgba(51, 51, 51, 1.00),
+  header:           rgb(147,39,143), //white,
+  sidebar:          rgb(41,171,226), //rgba(51, 51, 51, 1.00),
   brand:            rgb(146,143,145), //rgba(51, 51, 51, 1.00),
   hover:            rgb(146,143,145), //rgba(black, 0.04),
   hover-o:          rgb(146,143,145), //rgba(black, 0.05),
-  card:             white,
-  modal:            white,
+  card:             rgb(158,118,209),//white,
+  modal:            rgb(158,118,209),//white,
   secondary-button: white,
   selected-cell:    theme-colors("primary"),
   chart-tooltip:    rgba(51, 51, 51, 1.00),
@@ -31,7 +31,7 @@ $light-theme-foreground: (
 
 //Dark Theme
 $dark-theme-background: (
-  background:       #3a3a3a,
+  background:       rgb(117,139,215),//#3a3a3a,
   header:           map_get($mat-grey, 800),
   sidebar:          rgba(51, 51, 51, 1.00),
   brand:            rgba(51, 51, 51, 1.00),
@@ -56,6 +56,7 @@ $dark-theme-foreground: (
   muted-text:       rgba(white, 0.3),
   chart-grid:          rgba(white, 0.05),
 );
+
 
 .theme-dark {
   @include theme($dark-theme-background, $dark-theme-foreground);
