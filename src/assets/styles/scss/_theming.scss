@@ -1,11 +1,11 @@
 //Light theme
 $light-theme-background: (
   background:       $body-bg,
-  header:           white,
-  sidebar:          rgba(51, 51, 51, 1.00),
-  brand:            rgba(51, 51, 51, 1.00),
-  hover:            rgba(black, 0.04),
-  hover-o:          rgba(black, 0.05),
+  header:            rgb(227,97,31), //white,
+  sidebar:          rgb(34,89,159), //rgba(51, 51, 51, 1.00),
+  brand:            rgb(146,143,145), //rgba(51, 51, 51, 1.00),
+  hover:            rgb(146,143,145), //rgba(black, 0.04),
+  hover-o:          rgb(146,143,145), //rgba(black, 0.05),
   card:             white,
   modal:            white,
   secondary-button: white,
